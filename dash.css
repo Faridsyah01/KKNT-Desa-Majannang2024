@@ -23,9 +23,7 @@
 
 }
 
-.sidebar {
-    color: #000000;
-}
+
 
 .search {
     position: relative;
@@ -222,7 +220,7 @@ footer {
     top: 60px;
     width: 50px;
     height: calc(100% - 60px);
-    background: #149cae;
+    background: #000000;
     overflow-x: hidden;
 }
 
