@@ -1,0 +1,397 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topbar {
+    position: fixed;
+    background: #000000;
+    padding: 0 20px;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
+    display: grid;
+    align-items: center;
+    z-index: 1;
+    grid-template-columns: 2fr 10fr 0.4fr 1fr;
+}
+
+.logo h2 {
+    color: #ffbf00;
+
+}
+
+.sidebar {
+    color: #000000;
+}
+
+.search {
+    position: relative;
+    width: 60%;
+    justify-self: center;
+}
+
+.search input {
+    width: 100%;
+    height: 40px;
+    padding: 0 40px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    border-radius: 12px;
+    background: #000000;
+}
+
+.search i {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+}
+
+.user {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.user img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.image_dash{
+    width: 1200px;
+    height: 400px;
+    padding-left: 120px;
+    padding-bottom: 30px;
+    padding-right: 120px;
+    
+}
+
+@media screen and (max-width: 1200px){
+    .topbar {
+        grid-template-columns: 1fr 4fr 0.4fr 1fr; 
+    }
+
+    .search {
+        width: 50%; 
+    }
+
+    .sidebar {
+        width: 100%; 
+        position: static; 
+        top: 60px; 
+    }
+    .image_dash {
+        width: auto;
+        height: auto;
+     
+
+
+    }
+}
+/* Code Team */
+.kontainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.kontainer .kartu {
+    width: 200px;
+    margin: 10px;
+    background: #444;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.kontainer .kartu:hover {
+    background: coral;
+}
+
+.kontainer .kartu .profile {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 20px auto;
+    border: 5px solid coral;
+}
+
+.kontainer .kartu .profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.kontainer .kartu .detail h2,
+.kontainer .kartu .detail h4 {
+    margin: 10px 0;
+}
+
+.kontainer .kartu .social {
+    margin: 15px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.kontainer .kartu .detail .social a {
+    margin: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.kontainer .kartu .social a:hover {
+    background: #222;
+}
+
+.kontainer .kartu .social a i {
+    font-size: 21px;
+    color: white;
+}
+@media screen and (max-width: 1200px) {
+    .kontainer.kartu {
+         width: 100%;
+     }
+ }
+
+/* awal code dashboard */
+footer {
+    background: #571212;
+    margin-bottom: none;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 66% auto;
+    padding: 4em 1em;
+    text-align: center;
+    padding-left: 200px;
+    padding-bottom: 30px;
+    padding-right:200px ;
+    
+}
+
+.foot ul {
+    display: grid;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+}
+
+.foot ul li {
+    padding: 2em;
+    color: #E98A8A;
+}
+
+.foot ul li span {
+    display: block;
+    font-size: 1.4em;
+    margin-bottom: 1em;
+    color: white;
+}
+
+@media screen and (max-width: 1200px)  {
+ .wrapper {
+        grid-template-columns: 100%;
+    }
+    .foot{
+        padding-top: 170% ;
+    }
+}
+
+/* awal code sidebar */
+.sidebar {
+    position: fixed;
+    top: 60px;
+    width: 50px;
+    height: calc(100% - 60px);
+    background: #149cae;
+    overflow-x: hidden;
+}
+
+.sidebar ul {
+    margin-top: 20px;
+}
+
+.sidebar ul li {
+    width: 100%;
+    list-style: none;
+}
+
+.sidebar ul li a {
+    width: 100%;
+    text-decoration: none;
+    color: beige;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar ul li a i {
+    min-width: 60px;
+    font-size: 24px;
+    text-align: center;
+}
+
+@media screen and (max-width: 200px)  {
+.sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        left: 0px;
+        top: 0;
+    }
+   .sidebar ul {
+        display: flex;
+        justify-content: space-between;
+    }
+   .sidebar ul li {
+        width: auto;
+    }
+   .sidebar ul li a {
+        height: 40px;
+        padding: 0 10px;
+    }
+   .sidebar ul li a i {
+        min-width: 40px;
+        font-size: 18px;
+    }
+}
+
+/* main section */
+.main {
+    position: absolute;
+    top: 60px;
+    width: calc(120% - 140px);
+    left: 50px;
+    min-height: calc(100%);
+    background: #b1cbbb;
+}
+
+.cards {
+    width: 100%;
+    display: grid;
+    padding: 35px 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.cards.card {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 7px 25px 0 rgba(0, 0, 0, 0.08);
+}
+
+@media screen and (max-width: 1200px)  {
+  .main  {
+        width: auto;
+        height: auto;
+        left: 50px;
+    }
+  .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+  .cards.card {
+        flex-direction: column;
+    }
+  .cards.card img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+  .cards.card h2 {
+        font-size: 1.2rem;
+    }
+  .cards.card p {
+        font-size: 0.9rem;
+
+    }
+    
+}
+/* bagian chartsnya */
+.charts {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+    width: 100%;
+    padding: 20px;
+    padding-top: 0;
+}
+
+.chart {
+    background: #fff;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    grid-column: span 2;
+}
+.line_chart{
+    background: #fff;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    grid-column: span 2;
+}
+.chart h2 {
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+   .charts {
+        grid-template-columns: 1fr;
+        left: 50px;
+    }
+   .chart {
+        margin-bottom: 20px;
+    }
+   .chart h2 {
+        font-size: 18px;
+    }
+}
+
+.text1{
+    text-align: center;
+}
+.text2{
+    text-align: center;
+}
+.text3{
+    text-align: center;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}

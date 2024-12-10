@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="dash.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+</head>
+<body>
+    <div class="container">
+        <div class="topbar"> 
+            <div class="logo">
+                <h2> DATA</h2>
+            </div>
+            <div class="search">
+                <input type="text" id="search" placeholder="search here">
+                <label for="search"> <i class="fas fa-search"> </i></label>
+            </div>
+            <i class="fas fa-bell"></i>
+            <div class="user">
+                <img src="assets/images/LOGO.png" alt="">
+            </div>
+
+<div class="sidebar"  style="color: black;"> 
+    
+        <ul>
+            <li> 
+                <a href="index.html">
+                <i class=" fas fa-th-large"></i>
+                <div> Dashboard</div>
+             </a>
+            
+            </li>
+
+
+        </ul>
+
+</div>
+        <div class="main">
+            <div class="cards">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number" id="card3Number"></div>
+                        <div class="card-name" id="card3Name"></div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number" id="card2Number"></div>
+                        <div class="card-name" id="card2Name"></div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number" id="card1Number"></div>
+                        <div class="card-name" id="card1Name"></div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="charts">
+                <div class="chart" >
+                    <h2>Pekerjaan</h2>
+                    <canvas id="educationChart1" width="400" height="400"></canvas>
+                </div>
+                <div class="chart" >
+                    <h3>Pendidikan</h3>
+                    <canvas id="educationChart" width="400" height="400"></canvas>
+                </div>
+                <div class="line_chart" >
+                    <h2>Status Perkawinan</h2>
+                    <canvas id="educationChart2" width="400" height="400"></canvas>
+                </div>
+                <div class="line_chart" >
+                    <h2>RW</h2>
+                    <canvas id="educationChart3" width="400" height="400"></canvas>
+                </div>
+            </div>
+                <thead>
+                    <tr id="table-header">
+                        <!-- Header akan dimasukkan di sini oleh JavaScript -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data akan dimasukkan di sini oleh JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script> <!-- Include lodash library -->
+    <script src="chart1.js"></script>
+    <script src="chart2.js"></script>
+    <script src="charts3.js"></script>
+    <script src="chart4.js"></script>
+    <script src="chart5.js"></script>  
+</body>
+</html>
