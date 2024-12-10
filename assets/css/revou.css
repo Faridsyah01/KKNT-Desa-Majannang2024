@@ -1,0 +1,45 @@
+.img_revou {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.label-revou h1 {
+  color: black;
+  text-align: center;
+  margin: 20px;
+  font-size: 45px;
+}
+
+.label-revou h1:hover {
+  color: #ffbf00;
+}
+
+.label-revou p {
+  color: black;
+  text-align: center;
+  margin: 30px;
+  font-size: 30px;
+}
+
+.img_revou img {
+  height: 493px;
+  width: 493px;
+  margin-top: 100px;
+}
+
+.description-revou p {
+  text-align: justify;
+  text-align-last: center;
+  margin: 0 80px 50px 80px;
+  font-size: 18px;
+}
+
+.img-revou-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}

@@ -1,0 +1,74 @@
+.outlets-coffee-shop {
+  display: flex;
+  width: 100%;
+  height: 800px;
+  flex-direction: column;
+  padding: 0px 20px;
+  margin-top: 80px;
+  align-items: center;
+  margin-bottom: 100px;
+
+}
+
+.outlets-title {
+  color: #000;
+  align-self: center;
+  font: 800;
+  font-size: 40px;
+  animation: slideTop 1s ease forwards;
+  padding-bottom: 50px;
+}
+
+
+
+.outlet-card {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background-image: url("/assets/images/Map.JPG");
+  color: #ffffff;
+  width: 70vw;
+  height: 80vh;
+  box-shadow:
+    0 6px 10px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: scroll;
+  transition: 0.3s;
+}
+
+.outlet-card:hover {
+  transform: scale(1.05);
+  box-shadow:
+    0 12px 20px 0 rgba(0, 0, 0, 0.2),
+    0 12px 100px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Map-Desa {
+  width: 90%;
+  height: 90%;
+  align-items: center;
+  border-radius: 20px;
+  z-index: 10;
+}
+
+.Map-Desa-deskripsi {
+  text-align: justify;
+  letter-spacing: -0.32px;
+  margin-top: 27px;
+  margin-right: 30px;
+  margin-left: 25px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font:
+    300 14px Poppins,
+    sans-serif;
+}
+.outlet-name {
+  font:
+    700 25px Poppins,
+    sans-serif;
+}
+
